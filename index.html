@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperCart — Cashierless Retail Technology for India</title>
+  <meta name="description" content="SuperCart lets customers scan products, pay digitally, and exit instantly — completely cashierless. Built for the modern Indian retail store.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo clickable" id="nav-logo">
+        <div class="logo-mark">S</div>
+        <span class="logo-text">SUPERCART</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#how-it-works" class="clickable" id="link-works">How It Works</a></li>
+        <li><a href="#features" class="clickable" id="link-features">Features</a></li>
+        <li><a href="#pricing" class="clickable" id="link-pricing">Pricing</a></li>
+        <li><a href="#contact" class="clickable" id="link-contact">Contact</a></li>
+      </ul>
+
+      <a href="#pricing" class="btn btn-ghost clickable" style="padding: 10px 20px; font-size: 14px;" id="btn-nav-cta">
+        Get Started →
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Background Glow Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    
+    <!-- 3D Perspective Grid Floor -->
+    <div class="grid-floor-container">
+      <div class="grid-floor"></div>
+    </div>
+
+    <div class="container">
+      <!-- Pulser Badge -->
+      <div class="hero-badge reveal stagger-1" id="hero-badge">
+        <span class="badge-dot"></span>
+        <span>CASHIERLESS RETAIL · INDIA</span>
+      </div>
+
+      <!-- Bebas Neue Headline -->
+      <h1 class="hero-headline reveal stagger-2" id="hero-headline">
+        <span class="line-1">NO MORE</span>
+        <span class="line-2">CHECKOUT</span>
+        <span class="line-3">QUEUES</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero-subtitle reveal stagger-3" id="hero-subtitle">
+        SuperCart lets your customers scan products, pay digitally, and exit — completely cashierless. Built for Indian retail stores.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-actions reveal stagger-4" id="hero-actions">
+        <a href="#pricing" class="btn btn-primary clickable" id="btn-hero-trial">Start Free Trial</a>
+        <a href="#how-it-works" class="btn btn-ghost clickable" id="btn-hero-works">See How It Works</a>
+      </div>
+
+      <!-- Trust Strip -->
+      <div class="trust-strip reveal stagger-4" id="trust-strip">
+        <div class="trust-item" id="trust-sec">
+          <span class="trust-icon">🔒</span> Secure Payments
+        </div>
+        <div class="trust-item" id="trust-setup">
+          <span class="trust-icon">⚡</span> 2-min Setup
+        </div>
+        <div class="trust-item" id="trust-platforms">
+          <span class="trust-icon">📱</span> Android & iOS
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scroll-ind">
+      <span>SCROLL</span>
+      <div class="scroll-line-container">
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infinite Scrolling Ticker Strip -->
+  <div class="ticker-container" id="ticker-strip">
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <div class="ticker-item">SCAN & GO SHOPPING <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">NO CHECKOUT QUEUES <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">REAL-TIME INVENTORY <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">DIGITAL RECEIPTS <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">GUARD VERIFICATION <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">RAZORPAY INTEGRATION <span class="ticker-separator">◆</span></div>
+        <!-- Duplicated items for seamless infinite scroll -->
+        <div class="ticker-item">SCAN & GO SHOPPING <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">NO CHECKOUT QUEUES <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">REAL-TIME INVENTORY <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">DIGITAL RECEIPTS <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">GUARD VERIFICATION <span class="ticker-separator">◆</span></div>
+        <div class="ticker-item">RAZORPAY INTEGRATION <span class="ticker-separator">◆</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works reveal" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">THREE STEPS TO CASHIERLESS</h2>
+        <p class="section-subtitle">A modern shopping flow designed to eliminate friction for both shopkeepers and customers.</p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card clickable" id="step-01">
+          <div class="step-number">01</div>
+          <div class="step-icon">📲</div>
+          <h3 class="step-title">Scan Store QR</h3>
+          <p class="step-desc">Customer scans the QR code at the entrance of your store to instantly begin a secure shopping session on their smartphone.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card clickable" id="step-02">
+          <div class="step-number">02</div>
+          <div class="step-icon">🛒</div>
+          <h3 class="step-title">Scan & Add Items</h3>
+          <p class="step-desc">Customers walk around the store scanning item barcodes directly using their phone. Their virtual cart builds in real-time.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card clickable" id="step-03">
+          <div class="step-number">03</div>
+          <div class="step-icon">✅</div>
+          <h3 class="step-title">Pay & Exit</h3>
+          <p class="step-desc">Pay instantly using UPI/Cards via Razorpay. Generates an exit receipt QR that the gate guard quickly scans to verify. Done!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phone Mockup Section -->
+  <section class="phone-mockup-section reveal" id="customer-app">
+    <div class="container">
+      <div class="phone-split-grid">
+        <!-- 3D Phone Mockup Left Column -->
+        <div class="phone-mockup-wrapper">
+          <div class="phone-glow"></div>
+          
+          <div class="phone-container" id="phone-container">
+            <div class="phone-screen">
+              <!-- Phone header -->
+              <div class="phone-header">
+                <span class="phone-store-name">FRESH MART · JAIPUR</span>
+                <div class="phone-session-badge">
+                  <span class="phone-session-dot"></span>
+                  SESSION ACTIVE
+                </div>
+              </div>
+              
+              <!-- Cart list items -->
+              <div class="phone-items-list">
+                <div class="phone-item">
+                  <div class="phone-item-details">
+                    <span class="phone-item-name">Amul Gold Milk (1L)</span>
+                    <span class="phone-item-qty">Qty: 1</span>
+                  </div>
+                  <span class="phone-item-price">₹28</span>
+                </div>
+                
+                <div class="phone-item">
+                  <div class="phone-item-details">
+                    <span class="phone-item-name">Britannia Bourbon Biscuits</span>
+                    <span class="phone-item-qty">Qty: 2</span>
+                  </div>
+                  <span class="phone-item-price">₹40</span>
+                </div>
+                
+                <div class="phone-item">
+                  <div class="phone-item-details">
+                    <span class="phone-item-name">Parle-G Gold</span>
+                    <span class="phone-item-qty">Qty: 1</span>
+                  </div>
+                  <span class="phone-item-price">₹10</span>
+                </div>
+              </div>
+              
+              <!-- Payment buttons -->
+              <div class="phone-footer">
+                <div class="phone-total-row">
+                  <span class="phone-total-label">Subtotal (3 items)</span>
+                  <span class="phone-total-price">₹78.00</span>
+                </div>
+                <button class="phone-btn-pay clickable" id="btn-mock-pay">REVIEW & PAY</button>
+                <button class="phone-btn-scan clickable" id="btn-mock-scan">+ SCAN BARCODE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Description Right Column -->
+        <div class="phone-text-content">
+          <span class="section-label">The Customer App</span>
+          <h2 class="section-title">SHOPPING REIMAGINED</h2>
+          <p>SuperCart requires zero app downloads to begin. The client interface is a fast, progressive web application (PWA) loading instantly inside any browser, optimized specifically for Indian cellular connections.</p>
+          
+          <ul class="app-features-list">
+            <li class="app-feature-item" id="app-f-1">
+              <span class="app-feature-icon">→</span>
+              <div class="app-feature-text">
+                <strong>Instant UPI Integration</strong>
+                Customers checkout securely using GPay, PhonePe, Paytm, or standard credit/debit cards.
+              </div>
+            </li>
+            <li class="app-feature-item" id="app-f-2">
+              <span class="app-feature-icon">→</span>
+              <div class="app-feature-text">
+                <strong>Offline-Resilient Syncing</strong>
+                Local cart caching ensures product data persists even in basement grocery stores with weak signals.
+              </div>
+            </li>
+            <li class="app-feature-item" id="app-f-3">
+              <span class="app-feature-icon">→</span>
+              <div class="app-feature-text">
+                <strong>Smart Digital Receipts</strong>
+                Environment-friendly PDF receipts instantly sent to WhatsApp, SMS, and email.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section reveal" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Everything You Need</span>
+        <h2 class="section-title">BUILT FOR REAL RETAIL</h2>
+        <p class="section-subtitle">Comprehensive tools that simplify inventory control, checkout operations, and customer trust.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card clickable" id="feat-inventory">
+          <div class="feature-icon-box">📦</div>
+          <h3>Inventory Management</h3>
+          <p>Real-time item count tracking syncs instantly with your existing POS as items are scanned by customers.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card clickable" id="feat-payments">
+          <div class="feature-icon-box">💳</div>
+          <h3>Multi-tenant Payments</h3>
+          <p>Route payments directly to different bank accounts for multiple franchise owners within a single brand dashboard.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card clickable" id="feat-guard">
+          <div class="feature-icon-box">🛡️</div>
+          <h3>Guard Verification</h3>
+          <p>Quick guard dashboard allows the gatekeeper to scan exit receipts and verify items in under 5 seconds.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card clickable" id="feat-discounts">
+          <div class="feature-icon-box">🏷️</div>
+          <h3>Discounts & Promotions</h3>
+          <p>Set custom discounts, dynamic deals, and buy-one-get-one coupons directly from the merchant panel.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card clickable" id="feat-analytics">
+          <div class="feature-icon-box">📊</div>
+          <h3>Analytics Dashboard</h3>
+          <p>Deep-dive telemetry showing peak hours, heatmaps, popular items, customer lifetime value, and cart size metrics.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card clickable" id="feat-security">
+          <div class="feature-icon-box">🔐</div>
+          <h3>Bank-grade Security</h3>
+          <p>Secure, end-to-end encrypted APIs with multi-level tokens prevent coupon leaks, cart tampering, and inventory theft.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section reveal" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" id="stat-queue">
+          <div class="stat-number">0s</div>
+          <div class="stat-label">QUEUE TIME</div>
+        </div>
+        <div class="stat-item" id="stat-steps">
+          <div class="stat-number">3</div>
+          <div class="stat-label">STEPS TO CHECKOUT</div>
+        </div>
+        <div class="stat-item" id="stat-products">
+          <div class="stat-number">4</div>
+          <div class="stat-label">PRODUCTS IN SUITE</div>
+        </div>
+        <div class="stat-item" id="stat-stores">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">STORES SUPPORTED</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section reveal" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">CHOOSE YOUR SCALE</h2>
+        <p class="section-subtitle">No hidden fees. Pick a plan that matches your monthly store transaction volume.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <div class="pricing-card" id="pricing-starter">
+          <div class="pricing-header">
+            <div class="pricing-tier">STARTER</div>
+            <div class="pricing-price">₹999<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>1,000 transactions/month</li>
+            <li>100 products limit</li>
+            <li>Customer App + Guard App + Store Portal</li>
+            <li>Community Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost clickable" id="btn-pricing-starter">Get Started</a>
+        </div>
+
+        <!-- Growth Plan (Featured) -->
+        <div class="pricing-card featured" id="pricing-growth">
+          <div class="popular-badge">MOST POPULAR</div>
+          <div class="pricing-header">
+            <div class="pricing-tier">GROWTH</div>
+            <div class="pricing-price">₹3,500<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>5,000 transactions/month</li>
+            <li>500 products limit</li>
+            <li>All Starter features</li>
+            <li>Priority Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary clickable" id="btn-pricing-growth">Get Started</a>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="pricing-card" id="pricing-enterprise">
+          <div class="pricing-header">
+            <div class="pricing-tier">ENTERPRISE</div>
+            <div class="pricing-price">₹8,000<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited transactions</li>
+            <li>Unlimited products</li>
+            <li>All Growth features</li>
+            <li>Custom integrations + SLA</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost clickable" id="btn-pricing-enterprise">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-section reveal" id="contact">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">READY TO GO CASHIERLESS?</h2>
+          <p class="cta-subtitle">Empower your customers, decrease queue drops, and maximize store profits today.</p>
+          <div class="cta-actions">
+            <a href="#pricing" class="btn btn-primary clickable" id="btn-cta-contact">Contact Us →</a>
+            <a href="#features" class="btn btn-ghost clickable" id="btn-cta-learn">Learn More</a>
+          </div>
+          <span class="cta-email">Have specific questions? Email us at <a href="mailto:support@supercarts.in" class="clickable">support@supercarts.in</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1 Logo -->
+        <div class="footer-col" id="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-mark">S</div>
+            <span class="logo-text">SUPERCART</span>
+          </div>
+          <p class="footer-desc">Premium cashierless shopping technology built to enhance customer retail experiences in Indian grocery and department stores.</p>
+        </div>
+
+        <!-- Column 2 Product -->
+        <div class="footer-col" id="footer-prod-links">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#how-it-works" class="clickable">How It Works</a></li>
+            <li><a href="#features" class="clickable">Features</a></li>
+            <li><a href="#pricing" class="clickable">Pricing</a></li>
+            <li><a href="#" class="clickable">Download App</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 Company -->
+        <div class="footer-col" id="footer-comp-links">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="clickable">About</a></li>
+            <li><a href="#" class="clickable">Blog</a></li>
+            <li><a href="#contact" class="clickable">Contact</a></li>
+            <li><a href="#" class="clickable">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 Legal -->
+        <div class="footer-col" id="footer-legal-links">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html" class="clickable">Privacy Policy</a></li>
+            <li><a href="#" class="clickable">Terms of Service</a></li>
+            <li><a href="#" class="clickable">Refund Policy</a></li>
+            <li><a href="#" class="clickable">Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span>&copy; 2026 SuperCart. Made with &hearts; in India.</span>
+        <div class="footer-bottom-links">
+          <span>support@supercarts.in</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
