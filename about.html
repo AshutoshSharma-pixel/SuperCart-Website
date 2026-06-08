@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — SuperCart | Cashierless Shopping for Indian Retail</title>
+  <meta name="description" content="Learn about SuperCart's mission to eliminate checkout queues in Indian retail. Built by a solo founder in Jaipur, Rajasthan.">
+  <meta property="og:title" content="About Us — SuperCart | Cashierless Shopping for Indian Retail">
+  <meta property="og:description" content="Discover how SuperCart is transforming Indian retail with cashierless, zero-hardware billing apps.">
+  <meta property="og:url" content="https://getsupercart.in/about.html">
+  <meta property="og:image" content="https://getsupercart.in/og-image.png">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="SuperCart">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us — SuperCart">
+  <meta name="twitter:description" content="Our mission to bring cashierless shopping to every Indian retail store.">
+  <meta name="twitter:image" content="https://getsupercart.in/og-image.png">
+  <link rel="canonical" href="https://getsupercart.in/about.html">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* About Page Specific Layout */
+    .about-hero {
+      padding: 160px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .about-content-section {
+      padding: 40px 0 80px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .about-card {
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 48px;
+    }
+
+    .about-card h3 {
+      font-size: 24px;
+      margin-top: 48px;
+      margin-bottom: 16px;
+      color: var(--gold-accent);
+      border-bottom: 1px solid rgba(200, 168, 75, 0.1);
+      padding-bottom: 8px;
+      font-family: var(--font-heading);
+      letter-spacing: 0.05em;
+    }
+
+    .about-card h3:first-of-type {
+      margin-top: 0;
+    }
+
+    .about-card p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 24px;
+      color: var(--text-muted);
+    }
+    
+    .about-stats {
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border-color);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    
+    .about-stat-item {
+      text-align: center;
+    }
+    
+    .about-stat-number {
+      font-family: var(--font-heading);
+      font-size: clamp(36px, 5vw, 54px);
+      color: var(--gold-bright);
+      line-height: 1;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--gold-bright) 30%, var(--gold-accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .about-stat-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+    
+    .about-cta-container {
+      margin-top: 48px;
+      padding: 40px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      background: var(--surface-color-2);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .about-cta-title {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      color: #FFF;
+    }
+
+    @media (max-width: 768px) {
+      .about-card {
+        padding: 24px;
+      }
+      .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Navbar -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo clickable" id="nav-logo">
+        <div class="logo-mark">S</div>
+        <span class="logo-text">SUPERCART</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html#how-it-works" class="clickable" id="link-works">How It Works</a></li>
+        <li><a href="index.html#features" class="clickable" id="link-features">Features</a></li>
+        <li><a href="index.html#pricing" class="clickable" id="link-pricing">Pricing</a></li>
+        <li><a href="contact.html" class="clickable" id="link-contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#pricing" class="btn btn-ghost clickable" style="padding: 10px 20px; font-size: 14px;" id="btn-nav-cta">
+        Get Started →
+      </a>
+    </div>
+  </header>
+
+  <!-- About Hero -->
+  <section class="about-hero" id="about-hero">
+    <div class="container">
+      <h1 class="section-title" style="font-size: clamp(36px, 6vw, 64px); max-width: 900px; margin: 0 auto 16px; line-height: 1.1;">WE'RE BUILDING THE FUTURE OF INDIAN RETAIL</h1>
+      <p class="section-subtitle" style="margin: 0 auto; max-width: 600px;">SuperCart was born from a simple frustration — why do Indian shoppers still wait in checkout queues in 2026?</p>
+    </div>
+  </section>
+
+  <!-- About Content Section -->
+  <section class="about-content-section" id="about-content">
+    <div class="container">
+      <div class="about-card">
+        
+        <h3>The Problem We're Solving</h3>
+        <p>India has over 14 million retail stores. From small kirana shops to sprawling multi-floor supermarkets, they serve as the lifeblood of our communities. Yet, everyday checkout processes remain stuck in the past. Every day, millions of shoppers waste precious hours standing in checkout queues. At the same time, store owners bear high operational costs, paying ₹8,000 to ₹15,000 per month for cashier salaries alone. We asked a simple question: what if customers could just scan, pay, and go?</p>
+
+        <h3>What We Built</h3>
+        <p>SuperCart is a complete cashierless shopping platform. It is a complete ecosystem comprised of three purpose-built products working together seamlessly: a Customer Mobile App allowing shoppers to scan product barcodes and pay instantly via UPI/cards; a Guard App for gatekeepers to scan exit codes and verify transactions in seconds; and a Store Portal for real-time inventory management, stock controls, and analytics. No dedicated hardware, no queues, and no cashier overhead.</p>
+
+        <h3>Built by a Solo Founder</h3>
+        <p>SuperCart was built by Ashutosh Sharma, a developer and entrepreneur based in Jaipur, Rajasthan. Starting as a solo project, SuperCart grew into a full-featured B2B SaaS platform serving retail stores across India. Every line of code, every design decision, every product choice has been made with one goal in mind: making Indian retail stores smarter and more profitable.</p>
+
+        <h3>Our Mission</h3>
+        <p>To make cashierless shopping the standard for Indian retail — accessible to every store, from a small kirana to a large supermarket chain. We believe technology should reduce operational costs, not add to them.</p>
+
+        <!-- Stats Row -->
+        <div class="about-stats">
+          <div class="about-stat-item">
+            <div class="about-stat-number">3</div>
+            <div class="about-stat-label">APPS BUILT</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="about-stat-number">₹999</div>
+            <div class="about-stat-label">STARTING PRICE</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="about-stat-number">0</div>
+            <div class="about-stat-label">HARDWARE REQUIRED</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="about-stat-number">IN 🇮🇳</div>
+            <div class="about-stat-label">MADE IN INDIA</div>
+          </div>
+        </div>
+        
+        <!-- CTA Bottom -->
+        <div class="about-cta-container">
+          <h4 class="about-cta-title">Ready to go cashierless?</h4>
+          <a href="index.html#contact" class="btn btn-primary clickable" id="btn-about-cta">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1 Logo -->
+        <div class="footer-col" id="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-mark">S</div>
+            <span class="logo-text">SUPERCART</span>
+          </div>
+          <p class="footer-desc">Premium cashierless shopping technology built to enhance customer retail experiences in Indian grocery and department stores.</p>
+        </div>
+
+        <!-- Column 2 Product -->
+        <div class="footer-col" id="footer-prod-links">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#how-it-works" class="clickable">How It Works</a></li>
+            <li><a href="index.html#features" class="clickable">Features</a></li>
+            <li><a href="index.html#pricing" class="clickable">Pricing</a></li>
+            <li><a href="#" class="clickable">Download App</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 Company -->
+        <div class="footer-col" id="footer-comp-links">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="clickable">About</a></li>
+            <li><a href="blog.html" class="clickable">Blog</a></li>
+            <li><a href="contact.html" class="clickable">Contact</a></li>
+            <li><a href="#" class="clickable" title="Coming Soon">Careers <small style="font-size: 10px; opacity: 0.6; margin-left: 2px;">(Coming Soon)</small></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 Legal -->
+        <div class="footer-col" id="footer-legal-links">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html" class="clickable">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="clickable">Terms of Service</a></li>
+            <li><a href="refund-policy.html" class="clickable">Refund Policy</a></li>
+            <li><a href="security.html" class="clickable">Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span>&copy; 2026 SuperCart. Made with &hearts; in India.</span>
+        <div class="footer-bottom-links">
+          <span>support@getsupercart.in</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

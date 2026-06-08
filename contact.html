@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — SuperCart | Get Your Store Set Up</title>
+  <meta name="description" content="Get cashierless retail set up in your store. Contact us to start your 1-month free trial. Serve shoppers in Jaipur and Rajasthan.">
+  <meta property="og:title" content="Contact Us — SuperCart | Get Your Store Set Up">
+  <meta property="og:description" content="Fill in your details and we'll contact you within 24 hours to set up cashierless billing at your store.">
+  <meta property="og:url" content="https://getsupercart.in/contact.html">
+  <meta property="og:image" content="https://getsupercart.in/og-image.png">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="SuperCart">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us — SuperCart">
+  <meta name="twitter:description" content="Set up cashierless shopping at your store. Free 1-month trial. Zero hardware needed.">
+  <meta name="twitter:image" content="https://getsupercart.in/og-image.png">
+  <link rel="canonical" href="https://getsupercart.in/contact.html">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Contact Page Specific Layout */
+    .contact-hero {
+      padding: 160px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .contact-section {
+      padding: 40px 0 80px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .contact-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+      margin-bottom: 80px;
+    }
+
+    .contact-info-panel {
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 16px;
+    }
+
+    .contact-info-icon {
+      font-size: 24px;
+      color: var(--gold-accent);
+    }
+    
+    .next-steps-container {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      margin-top: 10px;
+    }
+
+    .next-steps-title {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      color: #FFF;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+
+    .next-steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      list-style: none;
+    }
+
+    .next-step-item {
+      display: flex;
+      gap: 14px;
+    }
+
+    .next-step-num {
+      width: 24px;
+      height: 24px;
+      background: rgba(200, 168, 75, 0.1);
+      border: 1px solid var(--border-color);
+      color: var(--gold-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .next-step-text {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text-muted);
+    }
+    
+    .next-step-text strong {
+      color: #FFF;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .contact-form-panel {
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 40px;
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      border-top: 1px solid var(--border-color);
+      padding-top: 80px;
+    }
+
+    .faq-title {
+      font-family: var(--font-heading);
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 48px;
+      color: #FFF;
+      letter-spacing: 0.05em;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    .faq-item h4 {
+      font-size: 16px;
+      color: var(--gold-accent);
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-family: var(--font-body);
+      letter-spacing: normal;
+    }
+
+    .faq-item p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 992px) {
+      .contact-split {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-info-panel, .contact-form-panel {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Navbar -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo clickable" id="nav-logo">
+        <div class="logo-mark">S</div>
+        <span class="logo-text">SUPERCART</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html#how-it-works" class="clickable" id="link-works">How It Works</a></li>
+        <li><a href="index.html#features" class="clickable" id="link-features">Features</a></li>
+        <li><a href="index.html#pricing" class="clickable" id="link-pricing">Pricing</a></li>
+        <li><a href="contact.html" class="clickable" id="link-contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#pricing" class="btn btn-ghost clickable" style="padding: 10px 20px; font-size: 14px;" id="btn-nav-cta">
+        Get Started →
+      </a>
+    </div>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero" id="contact-hero">
+    <div class="container">
+      <h1 class="section-title" style="font-size: clamp(36px, 6vw, 64px); max-width: 900px; margin: 0 auto 16px; line-height: 1.1;">LET'S GET YOUR STORE CASHIERLESS</h1>
+      <p class="section-subtitle" style="margin: 0 auto; max-width: 650px;">Fill in your details and we'll contact you within 24 hours to set up SuperCart at your store — completely free to start.</p>
+    </div>
+  </section>
+
+  <!-- Contact Split Section -->
+  <section class="contact-section" id="contact-content">
+    <div class="container">
+      
+      <div class="contact-split">
+        <!-- Left Column Info Panel -->
+        <div class="contact-info-panel">
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span class="contact-info-icon">📧</span>
+              <span>support@getsupercart.in</span>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon">📍</span>
+              <span>Jaipur, Rajasthan, India</span>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon">⏱</span>
+              <span>Response time: Within 24 hours</span>
+            </div>
+          </div>
+          
+          <div class="next-steps-container">
+            <h3 class="next-steps-title">What Happens Next</h3>
+            <ul class="next-steps-list">
+              <li class="next-step-item">
+                <div class="next-step-num">1</div>
+                <div class="next-step-text">
+                  <strong>You fill the form</strong>
+                  Submit details about your retail shop on the right.
+                </div>
+              </li>
+              <li class="next-step-item">
+                <div class="next-step-num">2</div>
+                <div class="next-step-text">
+                  <strong>We call you within 24 hours</strong>
+                  We'll align on scheduling a quick physical store check.
+                </div>
+              </li>
+              <li class="next-step-item">
+                <div class="next-step-num">3</div>
+                <div class="next-step-text">
+                  <strong>We visit your store and set up</strong>
+                  We upload your barcodes, train guards, and mount entrance QRs.
+                </div>
+              </li>
+              <li class="next-step-item">
+                <div class="next-step-num">4</div>
+                <div class="next-step-text">
+                  <strong>Your store goes cashierless</strong>
+                  Begin serving customers queue-free with 1 month free trial.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column Lead Form Panel -->
+        <div class="contact-form-panel">
+          <form id="lead-form" action="https://formspree.io/f/mkoarovw" method="POST" class="lead-form" style="margin-top: 0;">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="store-name">Store Name *</label>
+                <input type="text" id="store-name" name="storeName" required placeholder="e.g. Fresh Mart" class="clickable">
+              </div>
+              <div class="form-group">
+                <label for="owner-name">Owner Name *</label>
+                <input type="text" id="owner-name" name="ownerName" required placeholder="e.g. Amit Sharma" class="clickable">
+              </div>
+              <div class="form-group">
+                <label for="phone-number">Phone Number *</label>
+                <input type="tel" id="phone-number" name="phone" required placeholder="e.g. +91 98765 43210" class="clickable">
+              </div>
+              <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city" required placeholder="e.g. Jaipur" class="clickable">
+              </div>
+              <div class="form-group">
+                <label for="store-type">Store Type *</label>
+                <select id="store-type" name="storeType" required class="clickable">
+                  <option value="" disabled selected>Select store type</option>
+                  <option value="Grocery/General">Grocery/General</option>
+                  <option value="Clothing/Apparel">Clothing/Apparel</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Pharmacy">Pharmacy</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="store-size">Store Size *</label>
+                <select id="store-size" name="storeSize" required class="clickable">
+                  <option value="" disabled selected>Select store size</option>
+                  <option value="Small under 500 sqft">Small under 500 sqft</option>
+                  <option value="Medium 500-2000 sqft">Medium 500-2000 sqft</option>
+                  <option value="Large above 2000 sqft">Large above 2000 sqft</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your store..." rows="4" class="clickable"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit clickable" id="btn-submit-lead">Send Request →</button>
+            <p class="form-note">We'll contact you within 24 hours</p>
+          </form>
+
+          <div id="form-success-msg" class="form-success-message" style="display: none; margin-top: 0;">
+            <span class="success-icon">✓</span>
+            <h3>THANK YOU!</h3>
+            <p>Your request has been submitted successfully. We'll contact you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ Section -->
+      <div class="faq-container">
+        <h3 class="faq-title">FREQUENTLY ASKED QUESTIONS</h3>
+        
+        <div class="faq-grid">
+          <!-- Q1 -->
+          <div class="faq-item">
+            <h4>Is there really no setup fee?</h4>
+            <p>Correct. We come to your store, set everything up, train your staff, and give you 1 month free. You only pay subscription costs after you see the true business value.</p>
+          </div>
+          
+          <!-- Q2 -->
+          <div class="faq-item">
+            <h4>What phones do my customers need?</h4>
+            <p>Any Android or iOS smartphone with a camera. No app download is required to browse or scan — the customer shopping app runs directly as a progressive web app inside their browser.</p>
+          </div>
+          
+          <!-- Q3 -->
+          <div class="faq-item">
+            <h4>Do I need any special hardware?</h4>
+            <p>No. SuperCart runs entirely on standard smartphones. Your customers use their own phones to scan. Your guard uses a basic Android phone. You manage everything from your phone or laptop browser.</p>
+          </div>
+          
+          <!-- Q4 -->
+          <div class="faq-item">
+            <h4>Which cities is SuperCart available in?</h4>
+            <p>Currently we're setting up pilot stores in Jaipur. We'll expand to other Rajasthan cities and then pan-India based on customer demand.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1 Logo -->
+        <div class="footer-col" id="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-mark">S</div>
+            <span class="logo-text">SUPERCART</span>
+          </div>
+          <p class="footer-desc">Premium cashierless shopping technology built to enhance customer retail experiences in Indian grocery and department stores.</p>
+        </div>
+
+        <!-- Column 2 Product -->
+        <div class="footer-col" id="footer-prod-links">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#how-it-works" class="clickable">How It Works</a></li>
+            <li><a href="index.html#features" class="clickable">Features</a></li>
+            <li><a href="index.html#pricing" class="clickable">Pricing</a></li>
+            <li><a href="#" class="clickable">Download App</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 Company -->
+        <div class="footer-col" id="footer-comp-links">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="clickable">About</a></li>
+            <li><a href="blog.html" class="clickable">Blog</a></li>
+            <li><a href="contact.html" class="clickable">Contact</a></li>
+            <li><a href="#" class="clickable" title="Coming Soon">Careers <small style="font-size: 10px; opacity: 0.6; margin-left: 2px;">(Coming Soon)</small></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 Legal -->
+        <div class="footer-col" id="footer-legal-links">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html" class="clickable">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="clickable">Terms of Service</a></li>
+            <li><a href="refund-policy.html" class="clickable">Refund Policy</a></li>
+            <li><a href="security.html" class="clickable">Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span>&copy; 2026 SuperCart. Made with &hearts; in India.</span>
+        <div class="footer-bottom-links">
+          <span>support@getsupercart.in</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side JavaScript -->
+  <script src="script.js"></script>
+  
+  <!-- Form Submission Handler -->
+  <script>
+    document.getElementById('lead-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const button = document.getElementById('btn-submit-lead');
+      const successMsg = document.getElementById('form-success-msg');
+      
+      button.disabled = true;
+      button.textContent = 'Sending...';
+      
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        if (response.ok) {
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+        } else {
+          const data = await response.json();
+          alert(data.errors ? data.errors.map(err => err.message).join(', ') : 'Oops! There was a problem submitting your form');
+          button.disabled = false;
+          button.textContent = 'Send Request →';
+        }
+      } catch (error) {
+        alert('Oops! There was a problem submitting your form');
+        button.disabled = false;
+        button.textContent = 'Send Request →';
+      }
+    });
+  </script>
+</body>
+</html>
