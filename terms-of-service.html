@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — SuperCart</title>
+  <meta name="description" content="SuperCart — Cashierless shopping platform for Indian retail stores. Scan products, pay digitally, skip the queue.">
+  <meta property="og:title" content="SuperCart — No More Checkout Queues">
+  <meta property="og:description" content="Built for Indian retail. Scan, pay, and go.">
+  <meta property="og:url" content="https://getsupercart.in">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Privacy/Terms Page Specific Layout */
+    .policy-hero {
+      padding: 160px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .policy-content-section {
+      padding: 60px 0 100px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .policy-card {
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 48px;
+    }
+
+    .policy-card h3 {
+      font-size: 24px;
+      margin-top: 36px;
+      margin-bottom: 16px;
+      color: var(--gold-accent);
+      border-bottom: 1px solid rgba(200, 168, 75, 0.1);
+      padding-bottom: 8px;
+    }
+
+    .policy-card h3:first-of-type {
+      margin-top: 0;
+    }
+
+    .policy-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+    }
+
+    .policy-card ul {
+      margin-bottom: 24px;
+      padding-left: 20px;
+      color: var(--text-muted);
+    }
+
+    .policy-card li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    
+    .effective-date {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--gold-accent);
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <!-- Navbar -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo clickable" id="nav-logo">
+        <div class="logo-mark">S</div>
+        <span class="logo-text">SUPERCART</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html#how-it-works" class="clickable" id="link-works">How It Works</a></li>
+        <li><a href="index.html#features" class="clickable" id="link-features">Features</a></li>
+        <li><a href="index.html#pricing" class="clickable" id="link-pricing">Pricing</a></li>
+        <li><a href="index.html#contact" class="clickable" id="link-contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#pricing" class="btn btn-ghost clickable" style="padding: 10px 20px; font-size: 14px;" id="btn-nav-cta">
+        Get Started →
+      </a>
+    </div>
+  </header>
+
+  <!-- Policy Page Header -->
+  <section class="policy-hero" id="policy-hero">
+    <div class="container">
+      <h1 class="section-title" style="font-size: clamp(40px, 8vw, 72px); margin-bottom: 8px;">TERMS OF SERVICE</h1>
+      <div class="effective-date">LAST UPDATED: JUNE 2026</div>
+    </div>
+  </section>
+
+  <!-- Policy Content Section -->
+  <section class="policy-content-section" id="policy-content">
+    <div class="container">
+      <div class="policy-card">
+        
+        <h3>1. Acceptance of Terms</h3>
+        <p>By accessing or using SuperCart's platform, website, apps, and services, you agree to comply with and be bound by these Terms of Service. If you do not agree, you must immediately cease usage of the platform. Governed by the laws of India, including the Information Technology (IT) Act, 2000, and the Indian Contract Act, 1872.</p>
+
+        <h3>2. The Service</h3>
+        <p>SuperCart provides a B2B SaaS cashierless shopping platform for retail stores in India. The platform includes:</p>
+        <ul>
+          <li><strong>Store Portal:</strong> Web dashboard for store owners to manage inventory, pricing, analytics, and store settings.</li>
+          <li><strong>Customer Mobile App:</strong> Android and iOS progressive web / native interface allowing shoppers to scan product barcodes and pay digitally.</li>
+          <li><strong>Guard Verification App:</strong> Android and iOS app allowing store staff to scan exit receipts and verify customer carts.</li>
+          <li><strong>Backend API & Infrastructure:</strong> Database syncing, security verification, and processing systems.</li>
+        </ul>
+
+        <h3>3. Accounts & Subscriptions</h3>
+        <ul>
+          <li><strong>Registration:</strong> Store owners must register with accurate, up-to-date, and complete business information.</li>
+          <li><strong>Subscription Plans:</strong> Billing is charged monthly based on the selected tier:
+            <ul>
+              <li>Starter: ₹999/month (up to 1,000 transactions/month, 100 products limit)</li>
+              <li>Growth: ₹3,500/month (up to 5,000 transactions/month, 500 products limit)</li>
+              <li>Enterprise: ₹8,000/month (unlimited transactions, unlimited products, custom integrations)</li>
+            </ul>
+          </li>
+          <li><strong>Renewal:</strong> Subscriptions auto-renew automatically unless cancelled via the Store Portal prior to the billing renewal date.</li>
+          <li><strong>Account Security:</strong> You are solely responsible for maintaining the confidentiality of your account credentials and credentials issued to your store's guards.</li>
+        </ul>
+
+        <h3>4. Payment Terms</h3>
+        <p>All subscription payments are processed securely via our payment gateway partner, Razorpay. All prices are stated in Indian Rupees (INR) and are inclusive of applicable taxes unless specified otherwise. Failed payments may result in immediate suspension of API access and app functionality for your store. Subscription upgrades take effect immediately with prorated billing applied to the current cycle.</p>
+
+        <h3>5. Store Owner Responsibilities</h3>
+        <p>Store owners using the B2B SaaS platform agree to:</p>
+        <ul>
+          <li>Maintain accurate, up-to-date product barcodes and pricing in the Store Portal.</li>
+          <li>Ensure gate guard staff are properly trained to use the Guard App for exits.</li>
+          <li>Display store entry QR codes prominently at store entrances.</li>
+          <li>Comply with all local retail laws, GST declarations, and consumer protection codes.</li>
+          <li>Refrain from using the platform for any fraudulent or illegal sales operations.</li>
+        </ul>
+
+        <h3>6. Customer Data</h3>
+        <p>Store owners agree not to misuse or export customer shopping histories for unauthorized third-party targeting. Customer data is stored securely on Google Cloud Platform. SuperCart operates as a data processor, and store owners operate as data controllers. Data usage is governed by India's IT Act 2000 and the Digital Personal Data Protection (DPDP) Act 2023.</p>
+
+        <h3>7. Intellectual Property</h3>
+        <p>The SuperCart platform, brand marks, custom logos, source code, and underlying cashierless technology are the sole property of SuperCart. Store owners and customers are granted a limited, non-exclusive, non-transferable license to access the apps during their active subscription. You may not copy, modify, distribute, or reverse engineer any part of the platform. Store owners retain ownership of their inventory descriptions and price data upload.</p>
+
+        <h3>8. Limitation of Liability</h3>
+        <p>SuperCart is a software platform and is not liable for retail losses, shoplifting, shrinkages, or transaction errors arising from payment failures by third-party providers (such as Razorpay, Firebase, or regional network infrastructure). Our maximum aggregate liability is strictly limited to the amount paid for your store's last month's subscription fee. We are not liable for any indirect, consequential, or punitive damages.</p>
+
+        <h3>9. Termination</h3>
+        <p>Either party may terminate the subscription with 30 days written notice. SuperCart reserves the right to terminate accounts immediately in the event of terms violations, unpaid balances, or fraudulent operations. Upon termination, store data exports will remain accessible for download within the Store Portal for a period of 30 days.</p>
+
+        <h3>10. Governing Law</h3>
+        <p>These terms and conditions are governed by and construed in accordance with the laws of the Republic of India. Any disputes arising out of these terms shall be subject to the exclusive jurisdiction of the competent courts in Jaipur, Rajasthan.</p>
+        
+        <p>Contact: <a href="mailto:support@getsupercart.in" class="clickable">support@getsupercart.in</a></p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1 Logo -->
+        <div class="footer-col" id="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-mark">S</div>
+            <span class="logo-text">SUPERCART</span>
+          </div>
+          <p class="footer-desc">Premium cashierless shopping technology built to enhance customer retail experiences in Indian grocery and department stores.</p>
+        </div>
+
+        <!-- Column 2 Product -->
+        <div class="footer-col" id="footer-prod-links">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#how-it-works" class="clickable">How It Works</a></li>
+            <li><a href="index.html#features" class="clickable">Features</a></li>
+            <li><a href="index.html#pricing" class="clickable">Pricing</a></li>
+            <li><a href="#" class="clickable">Download App</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 Company -->
+        <div class="footer-col" id="footer-comp-links">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="clickable">About</a></li>
+            <li><a href="#" class="clickable">Blog</a></li>
+            <li><a href="index.html#contact" class="clickable">Contact</a></li>
+            <li><a href="#" class="clickable">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 Legal -->
+        <div class="footer-col" id="footer-legal-links">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html" class="clickable">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="clickable">Terms of Service</a></li>
+            <li><a href="refund-policy.html" class="clickable">Refund Policy</a></li>
+            <li><a href="security.html" class="clickable">Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span>&copy; 2026 SuperCart. Made with &hearts; in India.</span>
+        <div class="footer-bottom-links">
+          <span>support@getsupercart.in</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

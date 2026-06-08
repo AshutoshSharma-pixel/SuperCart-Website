@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — SuperCart</title>
+  <title>Security — SuperCart</title>
   <meta name="description" content="SuperCart — Cashierless shopping platform for Indian retail stores. Scan products, pay digitally, skip the queue.">
   <meta property="og:title" content="SuperCart — No More Checkout Queues">
   <meta property="og:description" content="Built for Indian retail. Scan, pay, and go.">
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style.css">
   
   <style>
-    /* Privacy Policy Page Specific Layout */
+    /* Privacy/Terms Page Specific Layout */
     .policy-hero {
       padding: 160px 0 60px;
       text-align: center;
@@ -79,7 +79,7 @@
   <div class="custom-cursor-ring" id="cursor-ring"></div>
 
   <!-- Navbar -->
-  <header class="navbar scrolled" id="navbar"> <!-- Always scrolled/frosted for subpages -->
+  <header class="navbar scrolled" id="navbar">
     <div class="container">
       <a href="index.html" class="logo clickable" id="nav-logo">
         <div class="logo-mark">S</div>
@@ -102,8 +102,8 @@
   <!-- Policy Page Header -->
   <section class="policy-hero" id="policy-hero">
     <div class="container">
-      <h1 class="section-title" style="font-size: clamp(40px, 8vw, 72px); margin-bottom: 8px;">PRIVACY POLICY</h1>
-      <div class="effective-date">EFFECTIVE DATE: APRIL 1, 2026</div>
+      <h1 class="section-title" style="font-size: clamp(40px, 8vw, 72px); margin-bottom: 8px;">SECURITY</h1>
+      <div class="effective-date">SECURITY OVERVIEW & AUDITING</div>
     </div>
   </section>
 
@@ -112,46 +112,45 @@
     <div class="container">
       <div class="policy-card">
         
-        <h3>1. Data We Collect</h3>
-        <p>In order to provide our cashierless shopping services, SuperCart collects specific items of personal and device data from customers scanning QR codes at participating retail environments:</p>
+        <h3>1. Our Commitment</h3>
+        <p>Security is not an add-on feature at SuperCart; it is the core foundation of our cashierless retail technology. We implement advanced defensive engineering practices to protect merchant stores, customer identities, and financial transactions from leakage, unauthorized access, and database tampering.</p>
+
+        <h3>2. Data Encryption</h3>
         <ul>
-          <li><strong>Email Address & Phone Number:</strong> Required for secure store entry authentication, Digital Receipt generation, and communication of checkout confirmations.</li>
-          <li><strong>Shopping History:</strong> Detailed records of barcodes scanned, quantities, checkout store coordinates, payment records, and timestamp telemetry.</li>
-          <li><strong>Device Information:</strong> Device model, browser user-agent, operating system, and IP address for session security and web app scaling.</li>
+          <li><strong>Encryption in Transit:</strong> All communications between store client devices, guard verification apps, merchant dashboards, and our API backends are encrypted using TLS 1.3 protocol.</li>
+          <li><strong>Encryption at Rest:</strong> Sensitive storage fields, including store system keys and transaction references, are encrypted at rest using AES-256-CBC encryption blocks.</li>
+          <li><strong>Password Hashing:</strong> Credentials and guard logins are protected using bcrypt algorithms with a custom work factor (10 rounds).</li>
+          <li><strong>Customer Identity:</strong> Customer mobile number authentication is processed securely via Firebase Authentication protocols, eliminating password vulnerability.</li>
         </ul>
 
-        <h3>2. How We Use Your Data</h3>
-        <p>All data collected is utilized solely to guarantee secure, frictionless, and authentic cashierless transactions. Specific uses include:</p>
+        <h3>3. Infrastructure Security</h3>
         <ul>
-          <li>Facilitating instant order tracking and matching your digital cart to physical exits.</li>
-          <li>Sending automated digital transaction receipts directly via WhatsApp, SMS, and email.</li>
-          <li>Analyzing store telemetry and scan speeds to optimize product lookups and app responsiveness.</li>
-          <li>Preventing checkout abuse, coupon anomalies, and store-level shrinkages.</li>
+          <li><strong>Cloud Environment:</strong> SuperCart servers are hosted inside Google Cloud Platform container instances located in the <code>asia-south1</code> (Mumbai, India) region to ensure low latency and strict local data compliance.</li>
+          <li><strong>Network Isolation:</strong> Google Cloud SQL database clusters operate exclusively within private VPC boundaries. No direct SQL or database ports are exposed to the public internet.</li>
+          <li><strong>Compute Routing:</strong> Backend services run inside Google Cloud Run instances shielded by Cloud Armor firewalls to automatically mitigate DDoS attacks.</li>
         </ul>
 
-        <h3>3. Data Storage and Security</h3>
-        <p>Your data is hosted in high-security, end-to-end encrypted databases powered by Google Cloud. We apply industry-standard TLS encryption protocols during transit and AES-256 block encryption protocols for data at rest. Payment data processing is routed completely through our PCI-DSS compliant payment gateway integration partner (Razorpay), ensuring your cards and banking PINs never touch our servers.</p>
+        <h3>4. Payment Security</h3>
+        <p>All client payments are processed directly by Razorpay, a PCI-DSS Level 1 compliant gateway. SuperCart servers never receive, process, or store raw credit card numbers, CVVs, or NetBanking pins. Individual merchant integration credentials are encrypted independently using envelope encryption before storage. Double-spend and checkout validation events require secure cryptographic webhook signatures to prevent cart tampering.</p>
 
-        <h3>4. No Third-Party Sales</h3>
-        <p>SuperCart enforces a strict zero-sharing policy. We do not sell, lease, trade, or distribute your email addresses, phone numbers, or shopping histories to third-party marketing companies, advertisers, or programmatic aggregators. Data is shared exclusively with the specific store partner where your transaction takes place for inventory auditing.</p>
+        <h3>5. Access Control</h3>
+        <p>Dashboard access is authenticated using JSON Web Tokens (JWT) featuring strict 7-day expiry boundaries. We enforce Role-Based Access Control (RBAC) separating permissions into four tiers: Store Owner, Guard, Administrator, and Shopper. Database structures utilize logical separation, guaranteeing that one store's staff or scanners cannot view, query, or affect the inventory catalog of another store brand.</p>
 
-        <h3>5. User Rights</h3>
-        <p>We believe your data belongs to you. Under our user-rights guidelines, you may request the following actions at any time:</p>
+        <h3>6. Responsible Disclosure</h3>
+        <p>If you are a security researcher and identify a vulnerability in the SuperCart B2B software, customer apps, or websites, please notify our security team at <a href="mailto:support@getsupercart.in" class="clickable">support@getsupercart.in</a> with the subject line <strong>"Security Disclosure"</strong>. We commit to:</p>
         <ul>
-          <li><strong>Account Deletion:</strong> Permanently wipe your registered phone, email, and historical purchase data from our live databases.</li>
-          <li><strong>Data Export:</strong> Retrieve a machine-readable JSON copy of your personal shopping session histories.</li>
+          <li>Responding to your disclosure within 48 hours.</li>
+          <li>Working collaboratively with you to resolve the issue as quickly as possible.</li>
+          <li>Refraining from pursuing legal action against good-faith security researchers who abide by standard ethical disclosure terms.</li>
         </ul>
-        <p>To exercise these rights, please send a verification request containing your phone number to <a href="mailto:support@getsupercart.in" class="clickable">support@getsupercart.in</a>.</p>
 
-        <h3>6. Governing Law</h3>
-        <p>This privacy policy and all operational data processing practices by SuperCart are governed strictly by the laws of the Republic of India, including compliance under the Information Technology (IT) Act, 2000 and corresponding rules.</p>
-
-        <h3>7. Contact Information</h3>
-        <p>If you have questions, disputes, or security reports, please reach out to our grievance officer at:</p>
-        <p><strong>SuperCart Security & Privacy Team</strong><br>
-        Email: <a href="mailto:support@getsupercart.in" class="clickable">support@getsupercart.in</a><br>
-        Bengaluru, Karnataka, India
-        </p>
+        <h3>7. Compliance</h3>
+        <p>Our software stack, hosting clusters, and merchant data operations adhere to standard security acts, including:</p>
+        <ul>
+          <li><strong>Information Technology Act, 2000 (India):</strong> Compliance regarding cybersecurity standards and digital declarations.</li>
+          <li><strong>Digital Personal Data Protection (DPDP) Act, 2023:</strong> Secure processing of Indian consumer identities.</li>
+          <li><strong>PCI-DSS Compliance:</strong> Handled securely via tokenized checkouts on the Razorpay gateway framework.</li>
+        </ul>
 
       </div>
     </div>
