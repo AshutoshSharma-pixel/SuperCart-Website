@@ -1327,6 +1327,137 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 /* ==========================================================================
+   LEAD CAPTURE FORM STYLES
+   ========================================================================== */
+.lead-form {
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  color: #FFF;
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  width: 100%;
+  transition: var(--transition-fast);
+  outline: none;
+}
+
+/* Specific styling for select dropdown arrow */
+.lead-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23C8A84B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.lead-form input:focus,
+.lead-form select:focus,
+.lead-form textarea:focus {
+  border-color: var(--gold-accent);
+  box-shadow: 0 0 8px rgba(200, 168, 75, 0.2);
+}
+
+.lead-form input::placeholder,
+.lead-form textarea::placeholder {
+  color: rgba(240, 240, 240, 0.3);
+}
+
+.btn-submit {
+  width: 100% !important;
+  margin-top: 10px;
+  padding: 16px !important;
+  font-size: 16px !important;
+}
+
+.form-note {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: -8px;
+}
+
+/* Success Message styling */
+.form-success-message {
+  max-width: 600px;
+  margin: 40px auto 0;
+  padding: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background: var(--surface-color);
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 2px solid #10B981;
+  color: #10B981;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.form-success-message h3 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  color: var(--gold-bright);
+  margin-bottom: 12px;
+}
+
+.form-success-message p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -1429,5 +1560,15 @@ body.cursor-hover .custom-cursor-ring {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  /* Lead form mobile stack */
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .form-group.full-width {
+    grid-column: span 1;
   }
 }

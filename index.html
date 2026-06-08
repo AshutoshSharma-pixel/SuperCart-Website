@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SuperCart — Cashierless Retail Technology for India</title>
-  <meta name="description" content="SuperCart lets customers scan products, pay digitally, and exit instantly — completely cashierless. Built for the modern Indian retail store.">
+  <meta name="description" content="SuperCart — Cashierless shopping platform for Indian retail stores. Scan products, pay digitally, skip the queue.">
+  <meta property="og:title" content="SuperCart — No More Checkout Queues">
+  <meta property="og:description" content="Built for Indian retail. Scan, pay, and go.">
+  <meta property="og:url" content="https://getsupercart.in">
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -392,15 +395,101 @@
         <div class="cta-content">
           <h2 class="cta-title">READY TO GO CASHIERLESS?</h2>
           <p class="cta-subtitle">Empower your customers, decrease queue drops, and maximize store profits today.</p>
-          <div class="cta-actions">
-            <a href="#pricing" class="btn btn-primary clickable" id="btn-cta-contact">Contact Us →</a>
-            <a href="#features" class="btn btn-ghost clickable" id="btn-cta-learn">Learn More</a>
+          
+          <!-- Lead Capture Form -->
+          <form id="lead-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_ID" method="POST" class="lead-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="store-name">Store Name *</label>
+                <input type="text" id="store-name" name="storeName" required placeholder="e.g. Fresh Mart" class="clickable">
+              </div>
+              <div class="form-group">
+                <label for="owner-name">Owner Name *</label>
+                <input type="text" id="owner-name" name="ownerName" required placeholder="e.g. Amit Sharma" class="clickable">
+              </div>
+              <div class="form-group">
+                <label for="phone-number">Phone Number *</label>
+                <input type="tel" id="phone-number" name="phone" required placeholder="e.g. +91 98765 43210" class="clickable">
+              </div>
+              <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city" required placeholder="e.g. Jaipur" class="clickable">
+              </div>
+              <div class="form-group">
+                <label for="store-type">Store Type *</label>
+                <select id="store-type" name="storeType" required class="clickable">
+                  <option value="" disabled selected>Select store type</option>
+                  <option value="Grocery/General">Grocery/General</option>
+                  <option value="Clothing/Apparel">Clothing/Apparel</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Pharmacy">Pharmacy</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="store-size">Store Size *</label>
+                <select id="store-size" name="storeSize" required class="clickable">
+                  <option value="" disabled selected>Select store size</option>
+                  <option value="Small under 500 sqft">Small under 500 sqft</option>
+                  <option value="Medium 500-2000 sqft">Medium 500-2000 sqft</option>
+                  <option value="Large above 2000 sqft">Large above 2000 sqft</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your store..." rows="4" class="clickable"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit clickable" id="btn-submit-lead">Send Request →</button>
+            <p class="form-note">We'll contact you within 24 hours</p>
+          </form>
+
+          <div id="form-success-msg" class="form-success-message" style="display: none;">
+            <span class="success-icon">✓</span>
+            <h3>THANK YOU!</h3>
+            <p>Your request has been submitted successfully. We'll contact you within 24 hours.</p>
           </div>
-          <span class="cta-email">Have specific questions? Email us at <a href="mailto:support@supercarts.in" class="clickable">support@supercarts.in</a></span>
+
+          <span class="cta-email" style="margin-top: 30px; display: block;">Have specific questions? Email us at <a href="mailto:support@getsupercart.in" class="clickable">support@getsupercart.in</a></span>
         </div>
       </div>
     </div>
   </section>
+
+  <script>
+    document.getElementById('lead-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const button = document.getElementById('btn-submit-lead');
+      const successMsg = document.getElementById('form-success-msg');
+      
+      button.disabled = true;
+      button.textContent = 'Sending...';
+      
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        if (response.ok) {
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+        } else {
+          const data = await response.json();
+          alert(data.errors ? data.errors.map(err => err.message).join(', ') : 'Oops! There was a problem submitting your form');
+          button.disabled = false;
+          button.textContent = 'Send Request →';
+        }
+      } catch (error) {
+        alert('Oops! There was a problem submitting your form');
+        button.disabled = false;
+        button.textContent = 'Send Request →';
+      }
+    });
+  </script>
 
   <!-- Footer -->
   <footer class="footer">
@@ -453,7 +542,7 @@
       <div class="footer-bottom">
         <span>&copy; 2026 SuperCart. Made with &hearts; in India.</span>
         <div class="footer-bottom-links">
-          <span>support@supercarts.in</span>
+          <span>support@getsupercart.in</span>
         </div>
       </div>
     </div>
