@@ -343,12 +343,15 @@
           <div class="pricing-header">
             <div class="pricing-tier">STARTER</div>
             <div class="pricing-price">₹999<span>/month</span></div>
+            <p class="pricing-target" style="font-size: 14px; color: var(--text-muted); margin-top: 12px; line-height: 1.4;">Perfect for kirana, pharmacy & small grocery stores</p>
           </div>
           <ul class="pricing-features">
-            <li>1,000 transactions/month</li>
-            <li>100 products limit</li>
-            <li>Customer App + Guard App + Store Portal</li>
+            <li>500 products</li>
+            <li>Unlimited transactions</li>
+            <li>Customer App + Guard App</li>
+            <li>Store Portal & Analytics</li>
             <li>Community Support</li>
+            <li>1 Month Free Trial</li>
           </ul>
           <a href="#contact" class="btn btn-ghost clickable" id="btn-pricing-starter">Get Started</a>
         </div>
@@ -358,13 +361,16 @@
           <div class="popular-badge">MOST POPULAR</div>
           <div class="pricing-header">
             <div class="pricing-tier">GROWTH</div>
-            <div class="pricing-price">₹3,500<span>/month</span></div>
+            <div class="pricing-price">₹2,999<span>/month</span></div>
+            <p class="pricing-target" style="font-size: 14px; color: var(--text-muted); margin-top: 12px; line-height: 1.4;">Ideal for supermarkets & clothing stores</p>
           </div>
           <ul class="pricing-features">
-            <li>5,000 transactions/month</li>
-            <li>500 products limit</li>
-            <li>All Starter features</li>
+            <li>5,000 products</li>
+            <li>Unlimited transactions</li>
+            <li>Everything in Starter</li>
             <li>Priority Support</li>
+            <li>Advanced Analytics</li>
+            <li>1 Month Free Trial</li>
           </ul>
           <a href="#contact" class="btn btn-primary clickable" id="btn-pricing-growth">Get Started</a>
         </div>
@@ -373,17 +379,125 @@
         <div class="pricing-card" id="pricing-enterprise">
           <div class="pricing-header">
             <div class="pricing-tier">ENTERPRISE</div>
-            <div class="pricing-price">₹8,000<span>/month</span></div>
+            <div class="pricing-price">₹14,999<span>/month</span></div>
+            <p class="pricing-target" style="font-size: 14px; color: var(--text-muted); margin-top: 12px; line-height: 1.4;">For large format retail & chains</p>
           </div>
           <ul class="pricing-features">
+            <li>50,000 products</li>
             <li>Unlimited transactions</li>
-            <li>Unlimited products</li>
-            <li>All Growth features</li>
-            <li>Custom integrations + SLA</li>
+            <li>Everything in Growth</li>
+            <li>Custom integrations</li>
+            <li>Dedicated support + SLA</li>
+            <li>1 Month Free Trial</li>
           </ul>
           <a href="#contact" class="btn btn-ghost clickable" id="btn-pricing-enterprise">Contact Sales</a>
         </div>
       </div>
+
+      <!-- Trial Note -->
+      <p class="pricing-trial-note">All plans include 1 month free trial. No credit card required to start.</p>
+
+      <!-- Custom / Enterprise Plus Card (Separate Row) -->
+      <div class="pricing-custom-card" id="pricing-custom">
+        <div class="pricing-custom-left">
+          <div class="pricing-tier" style="color: var(--gold-bright);">CUSTOM</div>
+          <h3 class="pricing-custom-title">For Reliance Trends scale operations</h3>
+          <p class="pricing-custom-desc">Unlimited products, unlimited transactions, white-label options, on-site setup, dedicated account manager.</p>
+        </div>
+        <div class="pricing-custom-right">
+          <div class="pricing-price">Let's Talk</div>
+          <a href="#contact" class="btn btn-primary clickable" id="btn-pricing-custom">Contact Us →</a>
+        </div>
+      </div>
+
+      <style>
+        .pricing-trial-note {
+          text-align: center;
+          font-size: 14px;
+          color: var(--text-muted);
+          margin-top: 24px;
+          margin-bottom: 40px;
+        }
+
+        .pricing-custom-card {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 40px;
+          background: linear-gradient(135deg, var(--surface-color-2) 0%, rgba(200, 168, 75, 0.05) 100%);
+          border: 1px solid var(--border-color);
+          border-radius: 16px;
+          padding: 40px 48px;
+          align-items: center;
+          transition: var(--transition-smooth);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .pricing-custom-card:hover {
+          transform: translateY(-4px);
+          border-color: rgba(200, 168, 75, 0.4);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 25px rgba(200, 168, 75, 0.05);
+        }
+
+        .pricing-custom-left {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          text-align: left;
+        }
+
+        .pricing-custom-title {
+          font-family: var(--font-body);
+          font-size: 24px;
+          font-weight: 700;
+          color: #FFF;
+          letter-spacing: normal;
+        }
+
+        .pricing-custom-desc {
+          font-size: 15px;
+          color: var(--text-muted);
+          line-height: 1.6;
+        }
+
+        .pricing-custom-right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 16px;
+          justify-content: center;
+        }
+
+        .pricing-custom-right .pricing-price {
+          font-size: 38px;
+          text-align: right;
+          font-family: var(--font-heading);
+          color: #FFF;
+        }
+
+        .pricing-custom-right .btn {
+          width: 100%;
+          white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+          .pricing-custom-card {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 36px 24px;
+            text-align: center;
+          }
+          .pricing-custom-left {
+            text-align: center;
+          }
+          .pricing-custom-right {
+            align-items: center;
+          }
+          .pricing-custom-right .pricing-price {
+            text-align: center;
+          }
+        }
+      </style>
     </div>
   </section>
 
