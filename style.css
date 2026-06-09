@@ -1457,6 +1457,60 @@ body.cursor-hover .custom-cursor-ring {
   line-height: 1.6;
 }
 
+/* What Happens Next Section */
+.what-happens-next {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.what-happens-next h3 {
+  color: var(--gold-accent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  background: #C8A84B;
+  color: #0D1117;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-content strong {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.step-content p {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
 /* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
@@ -1570,5 +1624,10 @@ body.cursor-hover .custom-cursor-ring {
   
   .form-group.full-width {
     grid-column: span 1;
+  }
+
+  /* Mobile layout for what-happens-next steps-row */
+  .steps-row {
+    grid-template-columns: 1fr 1fr;
   }
 }
