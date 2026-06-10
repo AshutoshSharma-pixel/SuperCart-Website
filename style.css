@@ -258,6 +258,20 @@ body.cursor-hover .custom-cursor-ring {
   box-shadow: 0 0 15px rgba(200, 168, 75, 0.3);
 }
 
+.logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(200, 168, 75, 0.3);
+  transition: var(--transition-smooth);
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(200, 168, 75, 0.5);
+}
+
 .logo-text {
   font-family: var(--font-heading);
   font-size: 26px;
@@ -1219,6 +1233,11 @@ body.cursor-hover .custom-cursor-ring {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.footer-logo:hover .logo-img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(200, 168, 75, 0.5);
 }
 
 .footer-desc {
